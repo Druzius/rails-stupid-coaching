@@ -1,2 +1,11 @@
-<h1>Questions#answer</h1>
+<h1>Stupid Coaching Answers</h1>
 <p>Find me in app/views/questions/answer.html.erb</p>
+
+<% if @answer == "I am going to work" %>
+  <p>Great!</p>
+<% elsif @answer[-1, 1] == "?" %>
+  <p> Silly question, get dressed and go to work!</p>
+<% else %>
+  <p>I don't care, get dressed and go to work!</p>
+<% end %>
+
